@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .cord {
+        display: flex;
+        align-items: center;
+        width: 700px;
+        height: 100px;
+        color: white;
+        background-color: black;
+        justify-content: center;
+        font-size: x-large;
+      }
+      .tempInfo {
+        display: flex;
+        align-items: center;
+        width: 700px;
+        height: 100px;
+        color: white;
+        background-color: black;
+        justify-content: center;
+        font-size: xx-large;
+      }
+      .condition {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 100px;
+        color: white;
+        background-color: black;
+        font-size: x-large;
+      }
+      .cityName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 100px;
+        color: white;
+        background-color: black;
+        font-size: 35px;
+      }
+      .minmax {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 100px;
+        color: white;
+        background-color: black;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cityName">{cityName},{countryName}</div>
+
+      <div class="tempInfo">{temperature}&deg;C</div>
+      <div class="minmax">Min: {minTemp}&deg;C | Max {maxTemp}&deg;C</div>
+
+      <div class="condition">{status} | {desc}</div>
+      <div class="cord">Longitude: {longitude} | Latitude: {latitude}</div>
+    </div>
+  </body>
+</html>

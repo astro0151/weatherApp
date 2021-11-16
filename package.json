@@ -1,0 +1,15 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "creating weather app using nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Gulbahar Ali",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
